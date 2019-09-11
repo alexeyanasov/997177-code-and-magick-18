@@ -1,7 +1,7 @@
 # Учебный проект «Код и Магия» [![Build status][travis-image]][travis-url]
 
 * Студент: [Алексей Анасов](https://up.htmlacademy.ru/javascript/18/user/997177).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Вечканов](https://htmlacademy.ru/profile/id902303).
 
 ---
 
