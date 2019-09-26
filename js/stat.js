@@ -40,13 +40,15 @@ var getMaxElement = function (arr) {
 };
 
 window.renderStatistics = function (ctx, names, times) {
-  renderCloud(ctx, CLOUD_X + GAP, CLOUD_Y + GAP, CLOUD_SHADOW_COLOR);
+  var sumCloudXgap = CLOUD_X + GAP;
+  var sumCloudYgap = CLOUD_X + GAP;
+  renderCloud(ctx, sumCloudXgap, sumCloudYgap, CLOUD_SHADOW_COLOR);
   renderCloud(ctx, CLOUD_X, CLOUD_Y, CLOUD_COLOR);
   ctx.font = TEXT_TYPE;
   ctx.fillStyle = TEXT_COLOR;
 
-  ctx.fillText(HEADER_TITLE, CLOUD_X + GAP * 2, CLOUD_Y + GAP * 3);
-  ctx.fillText(HEADER_TEXT, CLOUD_X + GAP * 2, CLOUD_Y + GAP * 3 + FONT_GAP);
+  ctx.fillText(HEADER_TITLE, sumCloudXgap * 2, sumCloudYgap * 3);
+  ctx.fillText(HEADER_TEXT, sumCloudXgap * 2, sumCloudYgap * 3 + FONT_GAP);
 
   var maxTime = Math.round(getMaxElement(times));
 
